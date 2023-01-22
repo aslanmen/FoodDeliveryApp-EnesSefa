@@ -41,29 +41,6 @@ class _ProfilState extends State<Profil> {
     });
   }
 
-  signOut() async {
-    await Auth().signOut();
-    Get.to(LoginPage());
-  }
-
-  Future<void> dataUpdate() async {
-    var updateUser = Kullanici(
-        adres: _adresController.text.length > 0
-            ? _adresController.text
-            : kullanici.adres,
-        email: _emailController.text.length > 0
-            ? _emailController.text
-            : kullanici.email,
-        id: FirebaseAuth.instance.currentUser?.uid ?? '',
-        sifre: _sifreController.text.length > 0
-            ? _sifreController.text
-            : kullanici.sifre);
-    await FirebaseFirestore.instance
-        .collection('kullanici')
-        .doc(FirebaseAuth.instance.currentUser?.uid)
-        .update(updateUser.toJson());
-  }
-
   String changerMail = '';
   String changerSifre = '';
   String changerAdres = '';
