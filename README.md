@@ -1,7 +1,6 @@
 # mobil_projesi
 
-A new Flutter project.
-
+Bilgisayrım bozuk  ve bu  bilgisayardan denied hatası alındığı için bu hesaba göndermek zorunda kaldım.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
