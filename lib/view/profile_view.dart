@@ -265,30 +265,6 @@ class _ProfilState extends State<Profil> {
   }
 }
 
-/*Container textos(BuildContext context, String hint,
-      TextEditingController controller, Icon iconn, String changerrr) {
-    return Container(
-        width: MediaQuery.of(context).size.width * 0.9,
-        height: MediaQuery.of(context).size.height * 0.09,
-        decoration: BoxDecoration(
-            color: Colors.grey[200],
-            border: Border.all(color: Colors.white),
-            borderRadius: BorderRadius.circular(30)),
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: TextField(
-            onChanged: (value) {
-              
-                changerrr = value;
-              
-            },
-            controller: controller,
-            decoration: InputDecoration(
-                icon: iconn, border: InputBorder.none, hintText: hint),
-          ),
-        ));
-  }*/
-
 class myText extends StatelessWidget {
   TextEditingController _sifreController;
   String hint;
